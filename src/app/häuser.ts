@@ -1,5 +1,5 @@
 export interface Hauser {
-        id: number;
+        id: string;
         Kaufpreis: number;
         Bezeichnung: string;
         Baujahr: number;

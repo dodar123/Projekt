@@ -1,0 +1,16 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 820px;
+    height: 560px;
+  }
+.zitat {
+    font-family: "Ink Free";
+}
+
+.centerb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

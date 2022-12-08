@@ -5,6 +5,8 @@ import { WohnungenComponent } from './wohnungen/wohnungen.component';
 import { BauplatzComponent } from './bauplatz/bauplatz.component';
 import { CreateComponent } from './create/create.component';
 import { UebersichtComponent } from './uebersicht/uebersicht.component';
+import { ShowComponent } from './show/show.component';
+
 
 const routes: Routes = [
     {
@@ -21,6 +23,9 @@ const routes: Routes = [
     },
     {
         path:'home', component:UebersichtComponent
+    },
+    {
+        path:'show/:id', component:ShowComponent
     },
     {
         path:'', redirectTo:'home', pathMatch:'full'

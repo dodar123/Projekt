@@ -9,6 +9,8 @@ import { WohnungenComponent } from './wohnungen/wohnungen.component';
 import { BauplatzComponent } from './bauplatz/bauplatz.component';
 import { CreateComponent } from './create/create.component';
 import { UebersichtComponent } from './uebersicht/uebersicht.component';
+import { ShowComponent } from './show/show.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { UebersichtComponent } from './uebersicht/uebersicht.component';
     WohnungenComponent,
     BauplatzComponent,
     CreateComponent,
-    UebersichtComponent
+    UebersichtComponent,
+    ShowComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
