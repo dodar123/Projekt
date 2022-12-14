@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Hauser } from '../häuser';
 import { HauserNEU } from '../hauser';
 import { ActivatedRoute, Route, Router } from '@angular/router';
-
+import { UserDataService } from '../Services/user-data.service';
 
 @Component({
   selector: 'app-hauser',
@@ -11,9 +11,15 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
   styleUrls: ['./hauser.component.css']
 })
 export class HauserNEUComponent implements OnInit {
-
+  users:any;
   constructor( private router: Router,
-    private activatedRoute: ActivatedRoute) { }
+    private activatedRoute: ActivatedRoute,
+    private userData:UserDataService) {
+      this.userData.users().subscribe((data)=>{
+        console.warn("data",data);
+        this.users=data;
+      })
+     }
 
   bild1:string = 'assets/Images/Häuser/Haus1.jpg';
   bild2:string = 'assets/Images/Häuser/Haus2.jpg';

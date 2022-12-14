@@ -1,3 +1,5 @@
+
+
 <div class="container pt-5">
 <div class="container-pt5" >
 <html lang="en">
@@ -11,10 +13,13 @@
 	<body>
 	<!-- Start of Form -->
 	<form #usersForm="ngForm" (ngSubmit)="getHouseFromData(usersForm.value)">
+	<!-- Automatische ID-Vergabe -->
+	<label for="id">ID</label>
+	<input type="text" ngModel="{{UserId}}" name="ID" class="form-control">
 	<!-- 1. Text Input -->
 	<div class="form-group">
 		<label for="username">Straße</label>
-		<input type="text" ngModel name="Straße" class="form-control" placeholder="Straße">
+		<input ngModel name="Strasse" class="form-control" placeholder="Straße" />
 	</div>
 	<!-- 2. Password -->
 	<div class="form-group row mb-2 col-4" style="right: 90px;">
@@ -54,7 +59,9 @@
 	</div>
 	<hr> 
 	<!-- 9. Submit Button -->
-	<button type="submit" class="btn btn-success">Submit</button>
+
+	<button onclick="location.href='http://localhost:4200/H%C3%A4user'" type="submit" class="btn btn-success">Submit</button>
+
 	</form>
 	<!-- End of Form -->
 	<!-- Bootstrap 5 Scripts -->
