@@ -1,6 +1,6 @@
 import { DomElementSchemaRegistry } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { Hauser } from '../häuser';
+import { Objekt } from '../häuser';
 import { HauserNEU } from '../hauser';
 import { ActivatedRoute, Route, Router } from '@angular/router';
 

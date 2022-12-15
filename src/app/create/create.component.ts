@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { HauserNEU } from '../hauser';
-import { Hauser } from '../häuser';
+import { Objekt } from '../häuser';
 import { HttpClient } from '@angular/common/http';
 import { AppComponent } from '../app.component';
 import { ProjektService } from '../projekt.service';
@@ -36,20 +35,11 @@ export class CreateComponent implements OnInit {
           console.warn(result)
         })
       }
-      
-    
-  haeuser: Hauser = {
-    id: "Hallo",
-    Kaufpreis: 145.000,
-    Bezeichnung: "Wie beschriebn Sie Ihr Haus?",
-    Baujahr: 1995,
-    Garagenstellplatz: true,
-    Etagen: 3,
-    Wohnfläche: 187,
-  }
-
-
   ngOnInit(): void {
   }
 
 }
+function uuidv4(): String {
+	throw new Error('Function not implemented.');
+}
+

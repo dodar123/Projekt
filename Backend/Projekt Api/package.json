@@ -2,11 +2,11 @@
   "name": "express-beer-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Backend.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jens Reiner",
+  "author": "Lisa und Dome",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
