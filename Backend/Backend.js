@@ -1,3 +1,4 @@
+
 const express = require('express');
 const cors = require("cors");
 const app = express();
@@ -42,9 +43,9 @@ app.get('/Haus/:id', (req, res) => {
 })
 
 app.post('/Haus', (req, res) => {
-    // if (!req.body.hasOwnProperty('Haus ID')) {
-    //     resolveBadRequest(res, 'Missing "Haus ID" property')
-    // }
+    if (!req.body.hasOwnProperty('ID')) {
+         resolveBadRequest(res, 'Missing "Haus ID" property')
+    }
     if (!req.body.hasOwnProperty('Strasse')) {
         resolveBadRequest(res, 'Missing "Strasse" property');
     }

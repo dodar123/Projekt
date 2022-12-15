@@ -12,6 +12,7 @@ import { UebersichtComponent } from './uebersicht/uebersicht.component';
 import { ShowComponent } from './show/show.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,

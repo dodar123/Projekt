@@ -9,7 +9,7 @@
 <div class="row">
  <!-- <div class="mb-2">
     <div class="col-md-6">-->
-      <div *ngFor="let haeusers of hausers" class="col-xl-3 col-xl-6 col-md-4 col-lg-4 col-xl-3">
+      <div *ngFor="let haeusers of users" class="col-xl-3 col-xl-6 col-md-4 col-lg-4 col-xl-3">
 
           <!--Slideshow!-->
           <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
@@ -36,9 +36,13 @@
 
     <div class="row col p-4 d-flex flex-column position-static">
       <h2>{{haeusers.id}}</h2>
+<<<<<<< HEAD
       <h3 class="mb-0">Kaufpreis: {{haeusers.Preis}}€</h3>
+=======
+      <h3 class="mb-0">Kaufpreis: {{haeusers.Strasse}}€</h3>
+>>>>>>> e75095b13890d82e4325853634b42f935b931f66
       <div class="mb-1 text-muted">Baujahr: {{haeusers.Baujahr}}</div>
-      <p class="card-text mb-auto">Garagenstellplatz: {{haeusers.Garagenstellplatz }}</p>
+      <p class="card-text mb-auto">Garagenstellplatz: {{haeusers.Zimmer }}</p>
       <a href="http://localhost:4200/show/{{haeusers.id}}" class="stretched-link"></a>
 
      <!-- <a href="#" class="stretched-link">Continue reading</a>-->
