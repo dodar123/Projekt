@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { HauserNEU } from '../hauser';
-import { Hauser } from '../häuser';
+import { Objekt } from '../häuser';
 import { HttpClient } from '@angular/common/http';
 import { AppComponent } from '../app.component';
 import { ProjektService } from '../Services/projekt.service';
@@ -40,6 +39,8 @@ export class CreateComponent implements OnInit {
           console.warn(result)
         })
       }
+<<<<<<< HEAD
+=======
       
     
   haeuser: Hauser = {
@@ -53,7 +54,12 @@ export class CreateComponent implements OnInit {
   }
 
 
+>>>>>>> e75095b13890d82e4325853634b42f935b931f66
   ngOnInit(): void {
   }
 
 }
+function uuidv4(): String {
+	throw new Error('Function not implemented.');
+}
+

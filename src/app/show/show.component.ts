@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HauserNEU } from '../hauser';
 import { Router, ActivatedRoute } from '@angular/router';
 import { HauserNEUComponent } from '../hauser/hauser.component';
-import { Hauser } from '../häuser';
+import { Objekt } from '../häuser';
 import { v4 as uuidv4 } from 'uuid';
 
 @Component({
@@ -18,14 +18,25 @@ export class ShowComponent implements OnInit {
   bild3:string = 'assets/Images/Häuser/Haus3.jpg';
   bild4:string = 'assets/Images/Häuser/Haus4.jpg';
 
-  hausers: Hauser = {
-      id: uuidv4(),
-      Kaufpreis: 12345.00,
-      Bezeichnung: "Schönes Haus, in einer Wohlfühlarea, welche Sie noch nie gesehen haben",
-      Baujahr: 1952,
-      Garagenstellplatz: true,
-      Etagen: 4,
-      Wohnfläche: 234
+  objekt: Objekt = {
+	  id: uuidv4(),
+	  Bezeichnung: 'test',
+	  Adresse: "ijuhzgtzui",
+	  Baujahr: 1952,
+	  Garagenstellplatz: true,
+	  Etagen: 4,
+	  Wohnfläche: 234,
+	  Erstelltam: new Date(),
+	  Firma: 'Test',
+	  Preis: 123456,
+	  Nebenkosten: 485967,
+	  Typ: 'Wohnung',
+	  PLZ: 789456,
+	  Stadt: 'Bielefeld',
+	  Energieklasse: 'AA',
+	  Heizung: 'Pellets',
+	  Beschreibung: 'Schönes Haus, in einer Wohlfühlarea, welche Sie noch nie gesehen haben',
+	  Bezugsfrei: new Date(),
   }
 
   ngOnInit(): void {

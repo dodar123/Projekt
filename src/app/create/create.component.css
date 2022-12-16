@@ -1,0 +1,33 @@
+.form-control{
+
+	margin: 2%;
+}
+
+.form-group{
+
+	margin: 2%;
+	
+}
+
+label{
+
+	margin-left: 1.5%;
+}
+
+body > form > div:nth-child(1) > input{
+
+	margin-left: 1.5%;
+
+}
+
+#singleselect{
+
+	margin-left: 1.5%;
+
+}
+
+body > form > div:nth-child(12) > label{
+
+	margin-left: 1.5%;
+	
+}

@@ -1,7 +1,10 @@
+<<<<<<< HEAD
+=======
 
 
 <div class="container pt-5">
 <div class="container-pt5" >
+>>>>>>> e75095b13890d82e4325853634b42f935b931f66
 <html lang="en">
 	<head>
 	<!-- Meta Tags for Bootstrap 5 -->
@@ -10,7 +13,14 @@
 	<!-- Bootstrap 5 CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	</head>
+
 	<body>
+
+		<div class="container pt-5">
+			<div class="h-100 p-5 text-bg-dark rounded-3 text-center">
+			  <div class = "display-4"> Anlage eines neuen Objektes</div>
+			</div>
+		</div>
 	<!-- Start of Form -->
 	<form #usersForm="ngForm" (ngSubmit)="getHouseFromData(usersForm.value)">
 	<!-- Automatische ID-Vergabe -->
@@ -18,21 +28,40 @@
 	<input type="text" ngModel="{{UserId}}" name="ID" class="form-control">
 	<!-- 1. Text Input -->
 	<div class="form-group">
+<<<<<<< HEAD
+		<label>Bezeichnung</label>
+		<input type="text" ngModel name="Bezeichnung" class="form-control" placeholder="Bezeichnung">
+=======
 		<label for="username">Straße</label>
 		<input ngModel name="Strasse" class="form-control" placeholder="Straße" />
+>>>>>>> e75095b13890d82e4325853634b42f935b931f66
 	</div>
 	<!-- 2. Password -->
 	<div class="form-group row mb-2 col-4" style="right: 90px;">
 
 	<div class="col">
 		<!--RoomNumber-->
-		<label class="form-label">Baujahr</label>
-		<input type="number" ngModel name="Baujahr" class="form-control"/>
+		<label class="form-group">Adresse</label>
+		<input type="text" ngModel name="Adresse" class="form-control"/>
 	</div>
 </div>
-	<label for="Kaufpreis">Zimmeranzahl</label>
-	<br>
-	<input type="number" ngModel name="Zimmer" placeholder="Zimmeranzahl">
+
+<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+	<div class="col">
+		<!--RoomNumber-->
+		<label class="form-group">Preis</label>
+		<input type="number" ngModel name="Preis" class="form-control"/>
+	</div>
+</div>
+<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+	<div class="col">
+		<!--RoomNumber-->
+		<label class="form-group">Nebenkosten</label>
+		<input type="number" ngModel name="Nebenkosten" class="form-control"/>
+	</div>
+</div>
 
 	<!-- 3. Single Select-->
 	<div class="form-group">
@@ -40,15 +69,97 @@
 	<br>
 
 	<select class="form-control" id="singleselect">
+	<option>Bitte auswählen</option>
 	<option>Haus</option>
 	<option>Wohnung</option>
 	<option>Bauplatz</option> 
 
 	</select>
 	</div> 
-	<!-- 5. Textarea -->
+
+	<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+		<div class="col">
+			<!--RoomNumber-->
+			<label class="form-group">Postleitzahl</label>
+			<input type="number" ngModel name="Postleitzahl" class="form-control"/>
+		</div>
+	</div>
+
+	<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+		<div class="col">
+			<!--RoomNumber-->
+			<label class="form-group">Stadt</label>
+			<input type="text" ngModel name="Stadt" class="form-control"/>
+		</div>
+	</div>
+	<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+		<div class="col">
+			<!--RoomNumber-->
+			<label class="form-group">Größe in Quadratmeter</label>
+			<input type="number" ngModel name="Groesse" class="form-control"/>
+		</div>
+	</div>
+	<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+		<div class="col">
+			<!--RoomNumber-->
+			<label class="form-group">Etagen</label>
+			<input type="number" ngModel name="Etagen" class="form-control"/>
+		</div>
+	</div>
+	<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+	<div class="col">
+		<!--RoomNumber-->
+		<label class="form-group">Baujahr</label>
+		<input type="number" ngModel name="Baujahr" class="form-control"/>
+	</div>
+</div>
+<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+	<div class="col">
+		<!--RoomNumber-->
+		<label class="form-group">Energieklasse</label>
+		<input type="text" ngModel name="Energieklasse" class="form-control"/>
+	</div>
+</div>
 	<div class="form-group">
-	<label for="textarea">Weitere Details</label>
+		<label class="form-group" for="singleselect">Heizungsart</label>
+		<br>
+	
+		<select class="form-control" id="singleselect">
+		<option>Bitte auswählen</option>
+		<option>Gasheizung</option>
+		<option>Oelheizung</option>
+		<option>Solar</option> 
+		<option>Erdwärme</option> 
+		<option>Pelletheizung</option> 
+	
+		</select>
+		</div> 
+		<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+			<div class="col">
+				<!--RoomNumber-->
+				<label class="form-group">Bezugsfrei ab</label>
+				<input type="date" ngModel name="Bezugsfrei" class="form-control"/>
+			</div>
+		</div>
+		<div class="form-group row mb-2 col-4" style="right: 90px;">
+
+			<div class="col">
+				<!--RoomNumber-->
+				<label class="form-group">Garagenstellplatz vorhanden</label>
+				<input type="bol" ngModel name="Garagenstellplatz" class="form-control"/>
+			</div>
+		</div>
+
+
+	<div class="form-group">
+	<label class="form-group" for="textarea">Weitere Details</label>
 	<textarea class="form-control" id="textarea" rows="5"></textarea>
 	</div>
 	<hr>
@@ -59,9 +170,13 @@
 	</div>
 	<hr> 
 	<!-- 9. Submit Button -->
+<<<<<<< HEAD
+	<button type="submit" class="btn btn-success">Bestätigen</button>
+=======
 
 	<button onclick="location.href='http://localhost:4200/H%C3%A4user'" type="submit" class="btn btn-success">Submit</button>
 
+>>>>>>> e75095b13890d82e4325853634b42f935b931f66
 	</form>
 	<!-- End of Form -->
 	<!-- Bootstrap 5 Scripts -->
@@ -69,5 +184,4 @@
 
 	</body>
 </html>
-</div>
 
