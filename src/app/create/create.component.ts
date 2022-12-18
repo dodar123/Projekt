@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Objekt } from '../häuser';
+import { HauserNEU } from '../hauser';
 import { HttpClient } from '@angular/common/http';
 import { AppComponent } from '../app.component';
 import { ProjektService } from '../Services/projekt.service';
+import { HauserNEUComponent } from '../hauser/hauser.component';
 import { v4 as uuidv4 } from 'uuid';
 
 @Component({
@@ -29,6 +31,9 @@ export class CreateComponent implements OnInit {
         });
         
        }
+	ngOnInit(): void {
+		throw new Error('Method not implemented.');
+	}
     
 
 
@@ -39,27 +44,35 @@ export class CreateComponent implements OnInit {
           console.warn(result)
         })
       }
-<<<<<<< HEAD
-=======
       
     
-  haeuser: Hauser = {
-    id: this.UserId,
-    Kaufpreis: 145.000,
-    Bezeichnung: "Wie beschriebn Sie Ihr Haus?",
-    Baujahr: 1995,
-    Garagenstellplatz: true,
-    Etagen: 3,
-    Wohnfläche: 187,
-  }
-
-
->>>>>>> e75095b13890d82e4325853634b42f935b931f66
-  ngOnInit(): void {
-  }
-
+	  objekt = HauserNEU;
+	  "id": String;
+	  "Bezeichnung": String;
+	  "Adresse": String;
+	  "Baujahr": Number;
+	  "Garagenstellplatz": Boolean;
+	  "Etagen": Number;
+	  "Wohnfläche": Number;
+	  "Erstelltam": Date;
+	  //"Erstelltvon": Text,
+	  "Firma":String;
+	  "Preis": Number;
+	  "Nebenkosten": Number;
+	  "Typ": String;
+	  "PLZ": Number;
+	  "Stadt":String;
+	  "Energieklasse": String;
+	  "Heizung": String;
+	  "Beschreibung": String;
+	  "Bezugsfrei": Date;
 }
-function uuidv4(): String {
+ 
+
+
+
+
+function ngOnInit() {
 	throw new Error('Function not implemented.');
 }
 

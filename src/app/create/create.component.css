@@ -31,3 +31,21 @@ body > form > div:nth-child(12) > label{
 	margin-left: 1.5%;
 	
 }
+
+body > form > div:nth-child(2) > input{
+
+margin-left: 1.5%;
+
+}
+
+body > form > div:nth-child(3) > input{
+
+margin-left: 1.5%;
+
+}
+
+#singleselect{
+
+margin-top: auto;
+
+}
