@@ -49,7 +49,8 @@ export class CreateComponent implements OnInit {
 	  objekt = HauserNEU;
 	  "id": String;
 	  "Bezeichnung": String;
-	  "Adresse": String;
+	  "PLZ": Number;
+	  "Stadt":String;
 	  "Baujahr": Number;
 	  "Garagenstellplatz": Boolean;
 	  "Etagen": Number;
@@ -60,8 +61,6 @@ export class CreateComponent implements OnInit {
 	  "Preis": Number;
 	  "Nebenkosten": Number;
 	  "Typ": String;
-	  "PLZ": Number;
-	  "Stadt":String;
 	  "Energieklasse": String;
 	  "Heizung": String;
 	  "Beschreibung": String;
